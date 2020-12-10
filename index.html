@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+  <title>Todo List</title>
+</head>
+<body>
+  <section class="section-center">
+    <div class="header-container">
+      <div class="header">
+        <div class="today"></div>
+        <h1>to do list</h1>
+      </div>
+      <form class="form-control">
+        <input type="text" id="todo" placeholder="things to do today...">
+        <button type="submit" class="add-btn">add</button>
+      </form>
+      <form class="radio-control">
+        <div>
+          <input type="radio" name="filter" class="radio radio-all" value="all" checked >
+          <label for="all">all</label>
+        </div>
+        <div>
+          <input type="radio" name="filter" class="radio radio-checked" value="checked">
+          <label for="checked">completed</label>
+        </div>
+        <div>
+          <input type="radio" name="filter" class="radio radio-unchecked" value="unchecked">
+          <label for="unchecked">uncompleted</label>
+        </div>
+      </form>
+    </div>
+    <section class="list-container">
+      <div class="list">
+        <!-- start one list -->
+        <!-- <article class="list-item" id="324365">
+          <p class="title">do some xmas shopping</p>
+          <div class="btn-container">
+            <button type="button" class="check-btn">
+              <i class="fa fa-check"></i>
+            </button>
+            <button type="button" class="delete-btn">
+              <i class="fas fa-trash"></i>
+            </button>
+          </div>
+        </article> -->
+        <!-- end of one list -->
+      </div>
+      <button class="clear-btn">clear the list</button>
+    </section>
+  </section>
+
+</body>
+</html>
